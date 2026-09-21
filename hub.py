@@ -1,5 +1,7 @@
-import peremens as gs
+# hub.py
+# Главное меню игры и логика переходов между локациями.
 
+import peremens as gs
 from locations import (
     location1, location2, location3, location4, location5,
     hamam, trader, boss
@@ -7,6 +9,7 @@ from locations import (
 
 
 def hub():
+    """Главное меню игры. Позволяет выбрать локацию или действие."""
     print("\nЧто вы хотите сделать?")
     print("1 - пройти в заброшенную пещеру")
     print("2 - тёмный лес")
@@ -15,6 +18,7 @@ def hub():
     print("5 - озеро")
     print("6 - скупщик")
     print("7 - сдать монеты")
+
     gs.answer = input()
 
     if gs.answer == "1":
@@ -25,6 +29,7 @@ def hub():
         location2()
     elif gs.answer == "3":
         print("Вы подошли к мельнице")
+        # ASCII-арт мельницы
         print("""--------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
@@ -71,15 +76,13 @@ def hub():
         print("Вы пришли к озеру")
         location5()
     elif gs.answer == "6":
-        print("Вы подшли к скупщику")
-        print("""""")
+        print("Вы подошли к скупщику")
         trader()
     elif gs.answer == "7":
         boss()
-    elif gs.answer == "Хамам":
-        print("вы попали в зачарованый хамам")
+    elif gs.answer.lower() == "хамам":
+        print("Вы попали в зачарованный хамам")
         hamam()
     else:
         print("Неверный ввод, попробуйте снова")
         hub()
-hub()
