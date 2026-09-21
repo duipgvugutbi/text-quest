@@ -1,0 +1,16 @@
+coins = 0
+qcoins = 0
+inventory = []
+answer = ""
+flag_kitchen = 0
+flag_hut = 0
+flag_waterfall = 0
+flag_mill_inside = 0
+flag_mill_outside = 0
+flag_mill_wheel = 0
+flag_dungeon_left = 0
+flag_dungeon_straight = 0
+flag_lake_swim = 0
+flag_lake_shore = 0
+Coins_hamam = 0
+kotost = 0
