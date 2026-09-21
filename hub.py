@@ -75,7 +75,7 @@ def hub():
     elif gs.answer == "5":
         print("Вы пришли к озеру")
         location5()
-    elif gs.answer == "6":ги
+    elif gs.answer == "6":
         print("Вы подошли к скупщику")
         trader()
     elif gs.answer == "7":
